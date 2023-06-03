@@ -33,6 +33,19 @@
         color: antiquewhite;
       }
 
+      header {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/038/original/ghibli.png?1685631302);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
       .container-fluid {
         display: block;
         margin: 30px;
@@ -41,29 +54,32 @@
         background-position: center;
       }
 
-      main h1 {
+      main h1,
+      main h3 {
         text-align: center;
         margin: 30px;
       }
 
-      iframe {
+      .grid-2-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+      }
+
+      .video {
+        display: block;
+        margin: 0 auto;
         aspect-ratio: 1/1;
       }
     </style>
   </head>
   <body>
     <div class="container-fluid">
-      <header>
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/038/original/ghibli.png?1685631302"
-          alt="header img of studio Ghibli"
-          class="img-fluid"
-        />
-      </header>
+      <header></header>
       <main>
         <h1>STUDIO GHIBLI COLLECTION</h1>
         <div class="col-sm-6">
-          <h3>風の谷のナウシカ: Nausicaä Valley of the Wind</h3>
+          <h3><small>風の谷のナウシカ</small>: Nausicaä Valley of the Wind</h3>
           <p>
             A thousand years after a great war, a seaside kingdom known as the
             Valley of the Wind is one of the only areas that remains populated.
@@ -82,10 +98,18 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+            class="video"
           ></iframe>
         </div>
         <div class="col-sm-6">
-          <h3>天空の城ラピュタ: Castle of The Sky</h3>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/285/original/nausica%C3%A4_-valley-of-the-wind.jpg?1685805220"
+            alt="Nausicaä Valley of the Wind"
+            title="Poster of Nausicaä Valley of the Wind"
+          />
+        </div>
+        <div class="col-sm-6">
+          <h3><small>天空の城ラピュタ</small>: Castle of The Sky</h3>
           <p>
             Pazu, an engineer's apprentice finds a young girl, Sheeta floating
             down from the sky wearing a glowing pendant. Together they discover
@@ -103,10 +127,11 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+            class="video"
           ></iframe>
         </div>
         <div class="col-sm-6">
-          <h3>となりのトトロ: My Neighbour Totoro</h3>
+          <h3><small>となりのトトロ</small>: My Neighbour Totoro</h3>
           <p>
             Two young girls, Satsuki and Mei, have moved with their father into
             a new home in the country, while their mother recovers from illness
@@ -124,10 +149,11 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+            class="video"
           ></iframe>
         </div>
         <div class="col-sm-6">
-          <h3>魔女の宅急便: Kiki's Delivery Service</h3>
+          <h3><small>魔女の宅急便</small>: Kiki's Delivery Service</h3>
           <p>
             It is tradition for all young witches to leave their families on the
             night of a full moon to learn their craft. That night comes for
@@ -145,10 +171,11 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+            class="video"
           ></iframe>
         </div>
         <div class="col-sm-6">
-          <h3>紅の豚: Porco Rosso</h3>
+          <h3><small>紅の豚</small>: Porco Rosso</h3>
           <p>
             When "Porco" - whose face has been transformed into that of a pig by
             a mysterious spell - infuriates a band of sky pirates with his
@@ -169,10 +196,11 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+            class="video"
           ></iframe>
         </div>
         <div class="col-sm-6">
-          <h3>耳をすませば: Whisper of the Heart</h3>
+          <h3><small>耳をすませば</small>: Whisper of the Heart</h3>
           <p>
             Shizuku Tsukishima is a bit of a book-worm, spending her last summer
             vacation in junior high school reading and translating popular
@@ -193,10 +221,11 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+            class="video"
           ></iframe>
         </div>
         <div class="col-sm-6">
-          <h3>もののけ姫: Princess Mononoke</h3>
+          <h3><small>もののけ姫</small>: Princess Mononoke</h3>
           <p>
             A beautifully realised tale of civilisation versus nature, PRINCESS
             MONONOKE is a true epic by Japan's master animator Hayao Miyazaki.
@@ -218,10 +247,11 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+            class="video"
           ></iframe>
         </div>
         <div class="col-sm-6">
-          <h3>千と千尋の神隠し: Spirited Away</h3>
+          <h3><small>千と千尋の神隠し</small>: Spirited Away</h3>
           <p>
             From Hayao Miyazaki, one of the most celebrated filmmakers in the
             history of animated cinema, comes the Academy Award winning
@@ -242,10 +272,11 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+            class="video"
           ></iframe>
         </div>
         <div class="col-sm-6">
-          <h3>ハウルの動く城: Howl's Moving Castle</h3>
+          <h3><small>ハウルの動く城</small>: Howl's Moving Castle</h3>
           <p>
             Sophie, an average teenage girl working in a hat shop, finds her
             life thrown into turmoil when she is literally swept off her feet by
@@ -267,6 +298,7 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+            class="video"
           ></iframe>
         </div>
       </main>
