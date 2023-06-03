@@ -37,6 +37,8 @@
         display: block;
         margin: 30px;
         height: auto;
+        background-size: cover;
+        background-position: center;
       }
 
       main h1 {
@@ -44,14 +46,14 @@
         margin: 30px;
       }
 
-      .col-sm-6 {
+      .grid grid-2-columns {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
         margin-top: 20px;
       }
 
       iframe {
+        aspect-ratio: 1/1;
       }
     </style>
   </head>
@@ -66,8 +68,8 @@
       </header>
       <main>
         <h1>STUDIO GHIBLI COLLECTION</h1>
-        <div class="col-sm-6">
-          <h3>Nausicaä Valley of the Wind</h3>
+        <div class="grid grid-2-columns">
+          <h3>風の谷のナウシカ: Nausicaä Valley of the Wind</h3>
           <p>
             A thousand years after a great war, a seaside kingdom known as the
             Valley of the Wind is one of the only areas that remains populated.
@@ -86,7 +88,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="col-sm-6">
+        <div class="grid grid-2-columns">
           <h3>Castle of The Sky</h3>
           <p>
             Pazu, an engineer's apprentice finds a young girl, Sheeta floating
@@ -105,7 +107,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="col-sm-6">
+        <div class="grid grid-2-columns">
           <h3>My Neighbour Totoro</h3>
           <p>
             Two young girls, Satsuki and Mei, have moved with their father into
@@ -124,7 +126,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="col-sm-6">
+        <div class="grid grid-2-columns">
           <h3>Kiki's Delivery Service</h3>
           <p>
             It is tradition for all young witches to leave their families on the
@@ -143,7 +145,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="col-sm-6">
+        <div class="grid grid-2-columns">
           <h3>Porco Rosso</h3>
           <p>
             When "Porco" - whose face has been transformed into that of a pig by
@@ -165,7 +167,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="col-sm-6">
+        <div class="grid grid-2-columns">
           <h3>Whisper of the Heart</h3>
           <p>
             Shizuku Tsukishima is a bit of a book-worm, spending her last summer
@@ -188,7 +190,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="col-sm-6">
+        <div class="grid grid-2-columns">
           <h3>Princess Mononoke</h3>
           <p>
             A beautifully realised tale of civilisation versus nature, PRINCESS
@@ -211,7 +213,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="col-sm-6">
+        <div class="grid grid-2-columns">
           <h3>Spirited Away</h3>
           <p>
             From Hayao Miyazaki, one of the most celebrated filmmakers in the
@@ -223,6 +225,8 @@
             knew she had to free herself and return her family to the outside
             world. Director: Hayao Miyazaki Year of Production: 2001
           </p>
+        </div>
+        <div class="grid grid-2-columns">
           <iframe
             src="https://www.youtube.com/embed/ByXuk9QqQkk"
             title="YouTube video player of Spirited Away"
@@ -231,7 +235,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="col-sm-6">
+        <div class="grid grid-2-columns">
           <h3>Howl's Moving Castle</h3>
           <p>
             Sophie, an average teenage girl working in a hat shop, finds her
