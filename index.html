@@ -47,27 +47,47 @@
       main h1,
       main h3 {
         text-align: center;
-        margin: 30px;
       }
 
-      main img {
+      main h1 {
+        font-size: 76px;
+        margin: 50px;
+      }
+
+      .contents {
+        margin: 40px;
+      }
+
+      #nausicaa-img {
         display: flex;
         position: relative;
-        right: -800px;
-        top: -390px;
-        width: 35%;
+        right: -880px;
+        top: -580px;
+        width: 30%;
         border-radius: 15px;
       }
 
       .video {
         display: block;
         margin: 0 auto;
-        aspect-ratio: 1/1;
+        aspect-ratio: 21/9;
+        width: 100%;
       }
 
       @media (max-width: 400px) {
-        header {
-          object-fit: cover;
+        main h1 {
+          font-size: 36px;
+        }
+
+        main h3 {
+          font-size: 24px;
+          margin: 30px;
+        }
+
+        main p {
+          font-size: 16px;
+          line-height: 1.5;
+          margin-bottom: 30px;
         }
 
         main img {
@@ -81,13 +101,25 @@
           margin: 0 auto;
         }
 
-        #right-position {
+        main h1 {
+          font-size: 60px;
+          margin-bottom: 60px;
+        }
+
+        #nausicaa-img {
           display: flex;
           position: relative;
-          right: -380px;
-          top: -550px;
+          right: -410px;
+          top: -600px;
           width: 40%;
           border-radius: 15px;
+        }
+
+        .video {
+          display: block;
+          margin: 0 auto;
+          aspect-ratio: 16/9;
+          width: 100%;
         }
       }
     </style>
@@ -97,227 +129,253 @@
       <header></header>
       <main>
         <h1>STUDIO GHIBLI COLLECTION</h1>
-        <div class="col-sm-6">
-          <h3><small>風の谷のナウシカ</small>: Nausicaä Valley of the Wind</h3>
-          <p>
-            A thousand years after a great war, a seaside kingdom known as the
-            Valley of the Wind is one of the only areas that remains populated.
-            Led by the courageous Princess Nausicaä, the people of the Valley
-            are engaged in a constant struggle with powerful insects called
-            ohmu, who guard a poisonous jungle that is spreading across the
-            Earth. Nausicaä and her brave companions, together with the people
-            of the Valley, strive to restore the bond between humanity and the
-            earth. <br />
-            Director: Hayao Miyazaki <br />
-            Year of Production: 1984
-          </p>
-          <iframe
-            src="https://www.youtube.com/embed/OCerTWOyVZg"
-            title="YouTube video player of Nausicaä Valley of the Wind"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            class="video"
-          ></iframe>
+        <div class="contents">
+          <div class="col-sm-6">
+            <h3>
+              <small>風の谷のナウシカ</small>: Nausicaä Valley of the Wind
+            </h3>
+            <p>
+              A thousand years after a great war, a seaside kingdom known as the
+              Valley of the Wind is one of the only areas that remains
+              populated. Led by the courageous Princess Nausicaä, the people of
+              the Valley are engaged in a constant struggle with powerful
+              insects called ohmu, who guard a poisonous jungle that is
+              spreading across the Earth. Nausicaä and her brave companions,
+              together with the people of the Valley, strive to restore the bond
+              between humanity and the earth. <br />
+              Director: Hayao Miyazaki <br />
+              Year of Production: 1984
+            </p>
+            <iframe
+              src="https://www.youtube.com/embed/OCerTWOyVZg"
+              title="YouTube video player of Nausicaä Valley of the Wind"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
         </div>
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/285/original/nausica%C3%A4_-valley-of-the-wind.jpg?1685805220"
           alt="Nausicaä Valley of the Wind"
           title="Poster of Nausicaä Valley of the Wind"
-          id="right-position"
+          id="nausicaa-img"
         />
-        <div class="col-sm-6">
-          <h3><small>天空の城ラピュタ</small>: Castle of The Sky</h3>
-          <p>
-            Pazu, an engineer's apprentice finds a young girl, Sheeta floating
-            down from the sky wearing a glowing pendant. Together they discover
-            both are searching for the legendary floating castle Laputa and vow
-            to unravel the mystery of the luminous crystal around her neck.
-            Their quest won't be easy however. There are air pirates, secret
-            agents and astounding obstacles to keep them from the truth - and
-            from each other. <br />
-            Director: Hayao Miyazaki <br />
-            Year of Production: 1986
-          </p>
-          <iframe
-            src="https://www.youtube.com/embed/WmDebzBANF8"
-            title="YouTube video player of Castle of The Sky"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            class="video"
-          ></iframe>
+        <div class="contents">
+          <div class="col-sm-6">
+            <h3><small>天空の城ラピュタ</small>: Castle of The Sky</h3>
+            <p>
+              Pazu, an engineer's apprentice finds a young girl, Sheeta floating
+              down from the sky wearing a glowing pendant. Together they
+              discover both are searching for the legendary floating castle
+              Laputa and vow to unravel the mystery of the luminous crystal
+              around her neck. Their quest won't be easy however. There are air
+              pirates, secret agents and astounding obstacles to keep them from
+              the truth - and from each other. <br />
+              Director: Hayao Miyazaki <br />
+              Year of Production: 1986
+            </p>
+            <iframe
+              src="https://www.youtube.com/embed/WmDebzBANF8"
+              title="YouTube video player of Castle of The Sky"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/286/original/castle-in-the-sky.jpg?1685805227"
+            alt=""
+          />
         </div>
-        <div class="col-sm-6">
-          <h3><small>となりのトトロ</small>: My Neighbour Totoro</h3>
-          <p>
-            Two young girls, Satsuki and Mei, have moved with their father into
-            a new home in the country, while their mother recovers from illness
-            in a nearby hospital. To their surprise, they soon discover that
-            they share this home with some rather unusual creatures and even
-            stranger neighbours - forest guardians that the girls dub Totoro.
-            When trouble occurs, their new friends will help them rediscover
-            hope. <br />
-            Director: Hayao Miyazaki <br />
-            Year of Production: 1988
-          </p>
-          <iframe
-            src="https://www.youtube.com/embed/WJC1qciW_3k"
-            title="YouTube video player of My Neighbour Totoro"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            class="video"
-          ></iframe>
+        <div class="contents">
+          <div class="col-sm-6">
+            <h3><small>となりのトトロ</small>: My Neighbour Totoro</h3>
+            <p>
+              Two young girls, Satsuki and Mei, have moved with their father
+              into a new home in the country, while their mother recovers from
+              illness in a nearby hospital. To their surprise, they soon
+              discover that they share this home with some rather unusual
+              creatures and even stranger neighbours - forest guardians that the
+              girls dub Totoro. When trouble occurs, their new friends will help
+              them rediscover hope. <br />
+              Director: Hayao Miyazaki <br />
+              Year of Production: 1988
+            </p>
+            <iframe
+              src="https://www.youtube.com/embed/WJC1qciW_3k"
+              title="YouTube video player of My Neighbour Totoro"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <h3><small>魔女の宅急便</small>: Kiki's Delivery Service</h3>
-          <p>
-            It is tradition for all young witches to leave their families on the
-            night of a full moon to learn their craft. That night comes for
-            Kiki, who follows her dream and embarks on the experience of a
-            lifetime. With her chatty black cat, Jiji, she flies off to find the
-            perfect spot in a faraway city. There, a bakery owner befriends Kiki
-            and helps her start her own business: A high-flying delivery
-            service. <br />
-            Director: Hayao Miyazaki <br />
-            Year of Production: 1989
-          </p>
-          <iframe
-            src="https://www.youtube.com/embed/CJRJveWPPRU"
-            title="YouTube video player of Kiki's Delivery Service"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            class="video"
-          ></iframe>
+        <div class="contents">
+          <div class="col-sm-6">
+            <h3><small>魔女の宅急便</small>: Kiki's Delivery Service</h3>
+            <p>
+              It is tradition for all young witches to leave their families on
+              the night of a full moon to learn their craft. That night comes
+              for Kiki, who follows her dream and embarks on the experience of a
+              lifetime. With her chatty black cat, Jiji, she flies off to find
+              the perfect spot in a faraway city. There, a bakery owner
+              befriends Kiki and helps her start her own business: A high-flying
+              delivery service. <br />
+              Director: Hayao Miyazaki <br />
+              Year of Production: 1989
+            </p>
+            <iframe
+              src="https://www.youtube.com/embed/CJRJveWPPRU"
+              title="YouTube video player of Kiki's Delivery Service"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <h3><small>紅の豚</small>: Porco Rosso</h3>
-          <p>
-            When "Porco" - whose face has been transformed into that of a pig by
-            a mysterious spell - infuriates a band of sky pirates with his
-            aerial heroics, the pirates hire Curtis, a comical rival pilot, to
-            "get rid" of him. On the ground, the two pilots compete over the
-            affections of Gina, a beautiful cabaret singer. But it is in the
-            air, with Fio, a young and talented airplane engineer/designer,
-            where Porco's true battles are waged. From its Mediterranean Sea
-            settings to its dazzling aerial dogfights of amazing sweep and
-            grace, PORCO ROSSO is an exhilarating ride you'll never forget.
-            <br />
-            Director: Hayao Miyazaki <br />
-            Year of Production: 1992
-          </p>
-          <iframe
-            src="https://www.youtube.com/embed/LYdSt4GhZdo"
-            title="YouTube video player of Porco Rosso"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            class="video"
-          ></iframe>
+        <div class="contents">
+          <div class="col-sm-6">
+            <h3><small>紅の豚</small>: Porco Rosso</h3>
+            <p>
+              When "Porco" - whose face has been transformed into that of a pig
+              by a mysterious spell - infuriates a band of sky pirates with his
+              aerial heroics, the pirates hire Curtis, a comical rival pilot, to
+              "get rid" of him. On the ground, the two pilots compete over the
+              affections of Gina, a beautiful cabaret singer. But it is in the
+              air, with Fio, a young and talented airplane engineer/designer,
+              where Porco's true battles are waged. From its Mediterranean Sea
+              settings to its dazzling aerial dogfights of amazing sweep and
+              grace, PORCO ROSSO is an exhilarating ride you'll never forget.
+              <br />
+              Director: Hayao Miyazaki <br />
+              Year of Production: 1992
+            </p>
+            <iframe
+              src="https://www.youtube.com/embed/LYdSt4GhZdo"
+              title="YouTube video player of Porco Rosso"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <h3><small>耳をすませば</small>: Whisper of the Heart</h3>
-          <p>
-            Shizuku Tsukishima is a bit of a book-worm, spending her last summer
-            vacation in junior high school reading and translating popular
-            foreign music into Japanese. With aspirations to one day become a
-            writer, Shizuku can't help but notice that the name Seiji Amasawa
-            appears on every one of the books she borrows from the library.
-            Through a series of curious and magical incidents, she comes to meet
-            Seiji and discovers he has dreams of becoming a famous violin maker
-            in Italy. While their life-long goals pull them in two different
-            directions, Shizuku and Seiji are determined to remain true to their
-            strong feelings for one another. <br />
-            Director: Yoshifumi Kondou <br />
-            Year of Production: 1995
-          </p>
-          <iframe
-            src="https://www.youtube.com/embed/M2s3nDI9KMM"
-            title="YouTube video player of Whisper of the Heart"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            class="video"
-          ></iframe>
+        <div class="contents">
+          <div class="col-sm-6">
+            <h3><small>耳をすませば</small>: Whisper of the Heart</h3>
+            <p>
+              Shizuku Tsukishima is a bit of a book-worm, spending her last
+              summer vacation in junior high school reading and translating
+              popular foreign music into Japanese. With aspirations to one day
+              become a writer, Shizuku can't help but notice that the name Seiji
+              Amasawa appears on every one of the books she borrows from the
+              library. Through a series of curious and magical incidents, she
+              comes to meet Seiji and discovers he has dreams of becoming a
+              famous violin maker in Italy. While their life-long goals pull
+              them in two different directions, Shizuku and Seiji are determined
+              to remain true to their strong feelings for one another. <br />
+              Director: Yoshifumi Kondou <br />
+              Year of Production: 1995
+            </p>
+            <iframe
+              src="https://www.youtube.com/embed/M2s3nDI9KMM"
+              title="YouTube video player of Whisper of the Heart"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <h3><small>もののけ姫</small>: Princess Mononoke</h3>
-          <p>
-            A beautifully realised tale of civilisation versus nature, PRINCESS
-            MONONOKE is a true epic by Japan's master animator Hayao Miyazaki.
-            While protecting his village from a rampaging boar-god, the young
-            warrior Ashitaka becomes afflicted with a deadly curse. To find the
-            cure that will save his life, he journeys deep into sacred depths of
-            the Great Forest Spirit's realm where he meets San (Princess
-            Mononoke), a girl raised by wolves. It's not long before Ashitaka is
-            caught in the middle of a battle between iron-ore prospecting humans
-            and the forest dwellers. He must summon the spirit-powers and all
-            his courage to stop man and nature from destroying each other.
-            <br />
-            Director: Hayao Miyazaki <br />
-            Year of Production: 1997
-          </p>
-          <iframe
-            src="https://www.youtube.com/embed/4OiMOHRDs14"
-            title="YouTube video player of Princess Mononoke"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            class="video"
-          ></iframe>
+        <div class="contents">
+          <div class="col-sm-6">
+            <h3><small>もののけ姫</small>: Princess Mononoke</h3>
+            <p>
+              A beautifully realised tale of civilisation versus nature,
+              PRINCESS MONONOKE is a true epic by Japan's master animator Hayao
+              Miyazaki. While protecting his village from a rampaging boar-god,
+              the young warrior Ashitaka becomes afflicted with a deadly curse.
+              To find the cure that will save his life, he journeys deep into
+              sacred depths of the Great Forest Spirit's realm where he meets
+              San (Princess Mononoke), a girl raised by wolves. It's not long
+              before Ashitaka is caught in the middle of a battle between
+              iron-ore prospecting humans and the forest dwellers. He must
+              summon the spirit-powers and all his courage to stop man and
+              nature from destroying each other.
+              <br />
+              Director: Hayao Miyazaki <br />
+              Year of Production: 1997
+            </p>
+            <iframe
+              src="https://www.youtube.com/embed/4OiMOHRDs14"
+              title="YouTube video player of Princess Mononoke"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <h3><small>千と千尋の神隠し</small>: Spirited Away</h3>
-          <p>
-            From Hayao Miyazaki, one of the most celebrated filmmakers in the
-            history of animated cinema, comes the Academy Award winning
-            masterpiece, Spirited Away. Spirited Away is a wondrous fantasy
-            about a young girl named Chihiro who discovers a secret world of
-            strange spirits, creatures and sorcery. When her parents are
-            mysteriously transformed, she must call upon the courage she never
-            knew she had to free herself and return her family to the outside
-            world. <br />
-            Director: Hayao Miyazaki <br />
-            Year of Production: 2001
-          </p>
+        <div class="contents">
+          <div class="col-sm-6">
+            <h3><small>千と千尋の神隠し</small>: Spirited Away</h3>
+            <p>
+              From Hayao Miyazaki, one of the most celebrated filmmakers in the
+              history of animated cinema, comes the Academy Award winning
+              masterpiece, Spirited Away. Spirited Away is a wondrous fantasy
+              about a young girl named Chihiro who discovers a secret world of
+              strange spirits, creatures and sorcery. When her parents are
+              mysteriously transformed, she must call upon the courage she never
+              knew she had to free herself and return her family to the outside
+              world. <br />
+              Director: Hayao Miyazaki <br />
+              Year of Production: 2001
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <iframe
+              src="https://www.youtube.com/embed/ByXuk9QqQkk"
+              title="YouTube video player of Spirited Away"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <iframe
-            src="https://www.youtube.com/embed/ByXuk9QqQkk"
-            title="YouTube video player of Spirited Away"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            class="video"
-          ></iframe>
-        </div>
-        <div class="col-sm-6">
-          <h3><small>ハウルの動く城</small>: Howl's Moving Castle</h3>
-          <p>
-            Sophie, an average teenage girl working in a hat shop, finds her
-            life thrown into turmoil when she is literally swept off her feet by
-            a handsome but mysterious wizard named Howl. After this chance
-            meeting she is turned into a 90-year old woman by the vain and
-            conniving Witch of the Waste. Embarking on an incredible adventure
-            to lift the curse, she finds refuge in Howl's magical moving castle
-            where she becomes acquainted with Markl, Howl's apprentice, and a
-            hot-headed fire demon named Calcifer. As the true power of Howl's
-            wizardry is revealed, and his relationship with Sophie deepens, our
-            young grey heroine finds herself fighting to protect them both from
-            a dangerous war of sorcery that threatens their world. <br />
-            Director: Hayao Miyazaki <br />
-            Year of Production: 2004
-          </p>
-          <iframe
-            src="https://www.youtube.com/embed/iwROgK94zcM"
-            title="YouTube video player of Howl's Moving Castle"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            class="video"
-          ></iframe>
+        <div class="contents">
+          <div class="col-sm-6">
+            <h3><small>ハウルの動く城</small>: Howl's Moving Castle</h3>
+            <p>
+              Sophie, an average teenage girl working in a hat shop, finds her
+              life thrown into turmoil when she is literally swept off her feet
+              by a handsome but mysterious wizard named Howl. After this chance
+              meeting she is turned into a 90-year old woman by the vain and
+              conniving Witch of the Waste. Embarking on an incredible adventure
+              to lift the curse, she finds refuge in Howl's magical moving
+              castle where she becomes acquainted with Markl, Howl's apprentice,
+              and a hot-headed fire demon named Calcifer. As the true power of
+              Howl's wizardry is revealed, and his relationship with Sophie
+              deepens, our young grey heroine finds herself fighting to protect
+              them both from a dangerous war of sorcery that threatens their
+              world. <br />
+              Director: Hayao Miyazaki <br />
+              Year of Production: 2004
+            </p>
+            <iframe
+              src="https://www.youtube.com/embed/iwROgK94zcM"
+              title="YouTube video player of Howl's Moving Castle"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="video"
+            ></iframe>
+          </div>
         </div>
       </main>
     </div>
