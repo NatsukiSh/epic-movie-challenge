@@ -50,10 +50,13 @@
         margin: 30px;
       }
 
-      .grid-2-columns {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
+      main img {
+        display: flex;
+        position: relative;
+        right: -800px;
+        top: -390px;
+        width: 35%;
+        border-radius: 15px;
       }
 
       .video {
@@ -76,6 +79,15 @@
         header {
           width: 100%;
           margin: 0 auto;
+        }
+
+        #right-position {
+          display: flex;
+          position: relative;
+          right: -380px;
+          top: -550px;
+          width: 40%;
+          border-radius: 15px;
         }
       }
     </style>
@@ -108,13 +120,12 @@
             class="video"
           ></iframe>
         </div>
-        <div class="col-sm-6">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/285/original/nausica%C3%A4_-valley-of-the-wind.jpg?1685805220"
-            alt="Nausicaä Valley of the Wind"
-            title="Poster of Nausicaä Valley of the Wind"
-          />
-        </div>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/285/original/nausica%C3%A4_-valley-of-the-wind.jpg?1685805220"
+          alt="Nausicaä Valley of the Wind"
+          title="Poster of Nausicaä Valley of the Wind"
+          id="right-position"
+        />
         <div class="col-sm-6">
           <h3><small>天空の城ラピュタ</small>: Castle of The Sky</h3>
           <p>
