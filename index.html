@@ -19,7 +19,10 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-
+    <script
+      src="https://kit.fontawesome.com/300b9417c8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Epic movie Challenge</title>
     <style>
       body {
@@ -54,8 +57,14 @@
         margin: 50px;
       }
 
+      main h3 {
+        font-size: 38px;
+        margin: 30px;
+      }
+
       .contents {
-        margin: 40px;
+        margin-right: 40px;
+        margin-left: 40px;
       }
 
       #nausicaa-img,
@@ -80,6 +89,30 @@
         margin: 0 auto;
         aspect-ratio: 21/9;
         width: 100%;
+      }
+      footer p {
+        text-align: left;
+        margin: 30px;
+      }
+
+      .grid-2-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+
+      .social-links a {
+        margin: 0 5px;
+        color: #109ceb;
+        background: transparent;
+        padding: 8px 10px;
+        font-size: 30px;
+        border-radius: 50%;
+      }
+
+      .social-links a:hover {
+        color: white;
+        background: #109ceb;
       }
 
       @media (max-width: 400px) {
@@ -112,6 +145,14 @@
         main h1 {
           font-size: 60px;
           margin-bottom: 60px;
+        }
+
+        main h3 {
+          font-size: 32px;
+        }
+
+        small {
+          font-size: 18px;
         }
 
         #nausicaa-img {
@@ -156,7 +197,8 @@
         <div class="contents">
           <div class="col-sm-6">
             <h3>
-              <small>風の谷のナウシカ</small>: Nausicaä Valley of the Wind
+              <small>風の谷のナウシカ</small><br />
+              Nausicaä Valley of the Wind
             </h3>
             <p>
               A thousand years after a great war, a seaside kingdom known as the
@@ -188,7 +230,10 @@
         />
         <div class="contents">
           <div class="col-sm-6">
-            <h3><small>天空の城ラピュタ</small>: Castle of The Sky</h3>
+            <h3>
+              <small>天空の城ラピュタ</small> <br />
+              Castle of The Sky
+            </h3>
             <p>
               Pazu, an engineer's apprentice finds a young girl, Sheeta floating
               down from the sky wearing a glowing pendant. Together they
@@ -218,7 +263,7 @@
         </div>
         <div class="contents">
           <div class="col-sm-6">
-            <h3><small>となりのトトロ</small>: My Neighbour Totoro</h3>
+            <h3><small>となりのトトロ</small> <br />My Neighbour Totoro</h3>
             <p>
               Two young girls, Satsuki and Mei, have moved with their father
               into a new home in the country, while their mother recovers from
@@ -248,7 +293,7 @@
         </div>
         <div class="contents">
           <div class="col-sm-6">
-            <h3><small>魔女の宅急便</small>: Kiki's Delivery Service</h3>
+            <h3><small>魔女の宅急便</small><br />Kiki's Delivery Service</h3>
             <p>
               It is tradition for all young witches to leave their families on
               the night of a full moon to learn their craft. That night comes
@@ -269,7 +314,7 @@
               class="video"
             ></iframe>
           </div>
-          ]
+
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/288/original/kiki's-delivery-service.jpg?1685805242"
             alt="Kiki's Delivery Service"
@@ -279,7 +324,7 @@
         </div>
         <div class="contents">
           <div class="col-sm-6">
-            <h3><small>紅の豚</small>: Porco Rosso</h3>
+            <h3><small>紅の豚</small><br />Porco Rosso</h3>
             <p>
               When "Porco" - whose face has been transformed into that of a pig
               by a mysterious spell - infuriates a band of sky pirates with his
@@ -312,7 +357,7 @@
         </div>
         <div class="contents">
           <div class="col-sm-6">
-            <h3><small>耳をすませば</small>: Whisper of the Heart</h3>
+            <h3><small>耳をすませば</small> <br />Whisper of the Heart</h3>
             <p>
               Shizuku Tsukishima is a bit of a book-worm, spending her last
               summer vacation in junior high school reading and translating
@@ -345,7 +390,7 @@
         </div>
         <div class="contents">
           <div class="col-sm-6">
-            <h3><small>もののけ姫</small>: Princess Mononoke</h3>
+            <h3><small>もののけ姫</small><br />Princess Mononoke</h3>
             <p>
               A beautifully realised tale of civilisation versus nature,
               PRINCESS MONONOKE is a true epic by Japan's master animator Hayao
@@ -380,7 +425,7 @@
         </div>
         <div class="contents">
           <div class="col-sm-6">
-            <h3><small>千と千尋の神隠し</small>: Spirited Away</h3>
+            <h3><small>千と千尋の神隠し</small><br />Spirited Away</h3>
             <p>
               From Hayao Miyazaki, one of the most celebrated filmmakers in the
               history of animated cinema, comes the Academy Award winning
@@ -413,7 +458,7 @@
         </div>
         <div class="contents">
           <div class="col-sm-6">
-            <h3><small>ハウルの動く城</small>: Howl's Moving Castle</h3>
+            <h3><small>ハウルの動く城</small><br />Howl's Moving Castle</h3>
             <p>
               Sophie, an average teenage girl working in a hat shop, finds her
               life thrown into turmoil when she is literally swept off her feet
@@ -447,7 +492,44 @@
           />
         </div>
       </main>
+      <hr />
+      <footer class="grid grid-2-columns">
+        <div id="about">
+          <h3>About this website</h3>
+          <p>
+            This is the monthly challenge from SheCodes to practice my coding
+            skills. This month is to create a landing page about Epic Movie
+            Challenge and I chose my all the time favorites 9 films from "Studio
+            Ghibli Collection"!
+          </p>
+        </div>
+        <div>
+          <h3>About me</h3>
+          <p>
+            I am self-motivated Frontend Web Developer. I have completed
+            Workshop in SheCodes and looking for new opportunity. This page was
+            coded with ♥ by Natsuki Shuko
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/natsukishuko/"
+              target="_blank"
+              class="text-decoration-none"
+              title="Linkedin"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+
+            <a
+              href="https://github.com/NatsukiSh/epic-movie-challenge"
+              target="_blank"
+              class="text-decoration-none"
+              title="GitHub"
+            >
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
-3
