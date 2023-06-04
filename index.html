@@ -115,6 +115,20 @@
         background: #109ceb;
       }
 
+      .scroll-container {
+        margin-right: 20px;
+        overflow: hidden;
+        position: fixed;
+        right: -120px;
+        top: 40px;
+        width: 20%;
+      }
+
+      .scroll-container a {
+        position: sticky;
+        cursor: pointer;
+      }
+
       @media (max-width: 400px) {
         main h1 {
           font-size: 36px;
@@ -185,6 +199,11 @@
           margin: 0 auto;
           aspect-ratio: 16/9;
           width: 100%;
+        }
+
+        .scroll-container {
+          width: 20%;
+          right: -40px;
         }
       }
     </style>
@@ -490,6 +509,13 @@
             title="Poster of Howl's Moving Castle"
             id="sophie-img"
           />
+        </div>
+        <div class="scroll-container">
+          <a href="#">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/186/original/nekobus.png?1685734233"
+              alt="To top button"
+          /></a>
         </div>
       </main>
       <hr />
