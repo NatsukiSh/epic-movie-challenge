@@ -44,14 +44,6 @@
         align-items: center;
       }
 
-      .container-fluid {
-        display: block;
-        margin: 30px;
-        height: auto;
-        background-size: cover;
-        background-position: center;
-      }
-
       main h1,
       main h3 {
         text-align: center;
@@ -70,7 +62,17 @@
         aspect-ratio: 1/1;
       }
 
-      @media (max-width: 900px) {
+      @media (max-width: 400px) {
+        header {
+          object-fit: cover;
+        }
+
+        main img {
+          display: none;
+        }
+      }
+
+      @media (max-width: 900px) and (min-width: 401px) {
         header {
           width: 100%;
           margin: 0 auto;
