@@ -42,6 +42,7 @@
         background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/038/original/ghibli.png?1685631302);
         background-position: center;
         background-repeat: no-repeat;
+        background-size: 100%;
         min-height: 100vh;
         justify-content: center;
         align-items: center;
@@ -117,12 +118,11 @@
       }
 
       .scroll-container {
-        margin-right: 20px;
         overflow: hidden;
         position: fixed;
-        right: -190px;
-        top: 40px;
-        width: 20%;
+        right: -1380px;
+        top: 480px;
+        width: 100%;
       }
 
       .scroll-container a {
@@ -222,8 +222,9 @@
         }
 
         .scroll-container {
-          width: 20%;
-          right: -40px;
+          height: auto;
+          max-width: 100%;
+          right: -650px;
         }
       }
     </style>
@@ -232,7 +233,7 @@
     <div class="container-fluid">
       <header></header>
       <main>
-        <h1>STUDIO GHIBLI COLLECTION</h1>
+        <h1 id="top">STUDIO GHIBLI COLLECTION</h1>
         <div class="contents">
           <div class="col-sm-6">
             <h3>
@@ -531,7 +532,7 @@
           />
         </div>
         <div class="scroll-container">
-          <a href="#">
+          <a href=".#top">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/186/original/nekobus.png?1685734233"
               alt="To top button"
